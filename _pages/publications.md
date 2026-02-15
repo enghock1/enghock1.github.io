@@ -13,6 +13,14 @@ author_profile: true
   {% endif %}
 {% endfor %}
 
+## Book Chapters
+
+{% for post in site.publications reversed %}
+  {% if post.category == 'book_chapters' %}
+  <p>{{ post.citation }}</p>
+  {% endif %}
+{% endfor %}
+
 ## Patents
 
 {% for post in site.publications reversed %}

@@ -83,6 +83,16 @@ Journal Publications
   
 <div style="margin-bottom: 3em;"></div>
 
+Book Chapters
+======
+  <ul>{% for post in site.publications reversed %}
+    {% if post.category == 'book_chapters' %}
+    <p>{{ post.citation }}</p>
+    {% endif %}
+  {% endfor %}</ul>
+  
+<div style="margin-bottom: 3em;"></div>
+
 Patents
 ======
   <ul>{% for post in site.publications reversed %}
